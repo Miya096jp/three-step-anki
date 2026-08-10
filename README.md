@@ -1,16 +1,33 @@
-# React + Vite
+## エレベーターピッチ
+「暗記さん」というサービスは
+暗記カードアプリの設定や操作が複雑で使えないという問題を解決したい、
+語学学習者のための暗記カードアプリです。
+ユーザーは暗記カードを作って繰り返し学習することができ、
+多機能な暗記カードアプリとは違って、
+覚え具合を3段階で仕分けるだけで暗記に集中できることが特徴です。
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## 技術スタック
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### フロントエンド
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
 
-## Expanding the ESLint configuration
+### データ層
+- IndexedDB (Dexie)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 開発・品質管理
+- ESLint
+- Prettier
+- Vitest
+- React Testing Library
+
+### インフラ
+- Cloudflare Pages (ホスティング)
+- Wrangler (デプロイ設定)
+- GitHub Actions (CI)
